@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed-Aymen Labiod — Software</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.soft-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+.soft-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+.soft-header {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.4rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+.soft-icon {
+  font-size: 1.6rem;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.soft-title { font-weight: 600; font-size: 0.95rem; color: var(--text); }
+.soft-authors { font-size: 0.78rem; color: var(--muted); margin-top: 0.1rem; }
+.soft-body { padding: 1rem 1.4rem; }
+.soft-desc { font-size: 0.87rem; color: var(--text); line-height: 1.7; margin-bottom: 0.8rem; }
+.soft-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.7rem; }
+.soft-tag {
+  font-size: 0.7rem; font-weight: 600;
+  padding: 0.15rem 0.5rem; border-radius: 2px;
+  background: var(--blue-light, #eff6ff); color: var(--blue);
+  border: 1px solid rgba(37,99,235,0.15);
+}
+.soft-link {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.8rem; color: var(--blue); text-decoration: none;
+  font-weight: 500;
+}
+.soft-link:hover { text-decoration: underline; }
+.license-badge {
+  display: inline-block;
+  font-size: 0.7rem; font-weight: 600;
+  padding: 0.15rem 0.5rem; border-radius: 2px;
+  background: #dcfce7; color: #166534;
+  margin-left: 0.5rem;
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index-en.html" class="nav-name">M.-A. Labiod</a>
+  <a href="index-en.html">About</a>
+  <a href="publications-en.html">Publications</a>
+  <a href="teaching-en.html">Teaching</a>
+  <a href="supervision-en.html">Supervision</a>
+  <a href="responsibilities-en.html">Responsibilities</a>
+  <a href="software-en.html" class="active">Software</a>
+  <a href="projects-en.html">Projects</a>
+  <div class="lang-switch"><a href="software.html" class="lang-btn">FR</a><span class="lang-sep">|</span><a href="software-en.html" class="lang-btn lang-active">EN</a></div>
+</nav>
+<div class="page">
+  <aside class="sidebar">
+    <div class="profile-img"><img src="photo.png" alt="Mohamed-Aymen Labiod"></div>
+    <div class="sidebar-name">Mohamed-Aymen Labiod</div>
+    <div class="sidebar-title">Associate Professor · CNU Section 61<br>UPEC</div>
+    <div class="sidebar-affil">
+      <div class="affil-row"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm-7 9.09V17l7 3.83 7-3.83v-4.91L12 18l-7-6.5z"/></svg><span>Université Paris Est Créteil</span></div>
+      <div class="affil-row"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>IUT de Créteil-Vitry · Dept. R&amp;T</span></div>
+      <div class="affil-row"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg><span>LISSI Lab (EA 3956) · CIR Team</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="page-title">Platforms &amp; Software</h1>
+    <p class="page-subtitle">Développements logiciels, plateformes expérimentales et jeux de données — production released under open license <span class="license-badge">Open Source</span></p>
+
+    <div class="soft-grid">
+
+      <div class="soft-card">
+        <div class="soft-header">
+          <div class="soft-icon">📡</div>
+          <div>
+            <div class="soft-title">Plateforme Réseaux multi-accès</div>
+            <div class="soft-authors">Tuan Chu, Mohamed-Aymen Labiod, Abdelhamid Mellouk</div>
+          </div>
+        </div>
+        <div class="soft-body">
+          <p class="soft-desc">Conception et mise en œuvre d'une plateforme de déploiement de réseaux multi-accès dans divers environnements mobiles urbains. La solution a été testée dans différents scénarios réels : urbain, métro, RER, véhiculaire, etc. Elle permet l'évaluation et la validation d'approches d'ordonnancement et de gestion de la mobilité dans des contextes hétérogènes.</p>
+          <div class="soft-tags">
+            <span class="soft-tag">Multi-access</span>
+            <span class="soft-tag">SDN</span>
+            <span class="soft-tag">Mobilité urbaine</span>
+            <span class="soft-tag">IoT e-santé</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-header">
+          <div class="soft-icon">📶</div>
+          <div>
+            <div class="soft-title">Plateforme 5G (Open Air Interface)</div>
+            <div class="soft-authors">Mohamed-Aymen Labiod (porteur principal)</div>
+          </div>
+        </div>
+        <div class="soft-body">
+          <p class="soft-desc">Déploiement d'une plateforme 5G basée sur la radio logicielle et la solution Open Air Interface (OAI). Cet environnement de test flexible permet d'évaluer et valider des approches dans le contexte des réseaux 4G et 5G dans des conditions proches du réel : variation des paramètres réseau en temps réel, monitoring avancé du trafic, intégration avec des plateformes IoT.</p>
+          <div class="soft-tags">
+            <span class="soft-tag">5G / 4G</span>
+            <span class="soft-tag">Open Air Interface</span>
+            <span class="soft-tag">GNU Radio</span>
+            <span class="soft-tag">SDR</span>
+            <span class="soft-tag">NFV</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-header">
+          <div class="soft-icon">🧠</div>
+          <div>
+            <div class="soft-title">Plateforme d'évaluation de la QoE par signaux physiologiques</div>
+            <div class="soft-authors">Dr. Yann Senova (CHU Mondor), Mohamed-Aymen Labiod, Abdelhamid Mellouk</div>
+          </div>
+        </div>
+        <div class="soft-body">
+          <p class="soft-desc">Plateforme multimodale développée en collaboration avec l'équipe de neurochirurgie du CHU Henri Mondor (AP-HP). Elle intègre des données physiologiques — EEG, ECG, réponse galvanique — pour prédire et évaluer la Qualité d'Expérience (QoE) dans des interactions humaines avec des services multimédias. Le pipeline de traitement extrait des caractéristiques spectrales (entropie différentielle, densité spectrale de puissance) et alimente un modèle LSTM multi-tâches.</p>
+          <div class="soft-tags">
+            <span class="soft-tag">EEG / ECG</span>
+            <span class="soft-tag">QoE</span>
+            <span class="soft-tag">LSTM</span>
+            <span class="soft-tag">Informatique affective</span>
+            <span class="soft-tag">CHU Mondor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-header">
+          <div class="soft-icon">🔄</div>
+          <div>
+            <div class="soft-title">Plateforme de migration de services définis par logiciel (SDSM)</div>
+            <div class="soft-authors">Tuan Chu, Mohamed-Aymen Labiod, Brice Augustin</div>
+          </div>
+        </div>
+        <div class="soft-body">
+          <p class="soft-desc">Plateforme reposant sur le paradigme de la migration de services définie par logiciel (Software-Defined Service Migration) dans des environnements Multi-Access Edge Computing (MEC) sur réseaux 5G. Elle utilise un contrôleur SDN centralisé et le protocole QUIC pour optimiser la migration des services, garantissant la ongoingité même dans des conditions réseau dynamiques (mobilité, instabilité). La migration des conteneurs et connexions est anticipée pour réduire la latence perçue.</p>
+          <div class="soft-tags">
+            <span class="soft-tag">MEC</span>
+            <span class="soft-tag">SDN</span>
+            <span class="soft-tag">QUIC</span>
+            <span class="soft-tag">5G</span>
+            <span class="soft-tag">Migration de services</span>
+          </div>
+          <a href="https://gitfront.io/r/tuanctob48/43RCwCMmm2hh/SDSM-for-SDI/" target="_blank" class="soft-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            Voir le dépôt (gitfront.io)
+          </a>
+        </div>
+      </div>
+
+      <div class="soft-card">
+        <div class="soft-header">
+          <div class="soft-icon">🗃️</div>
+          <div>
+            <div class="soft-title">DeepGuardDB — Dataset images réelles et synthétiques</div>
+            <div class="soft-authors">Reghioua, Namani, Bendiab, Labiod, Shiaeles · IEEE Dataport, 2024</div>
+          </div>
+        </div>
+        <div class="soft-body">
+          <p class="soft-desc">Jeu de données publié sur IEEE Dataport comprenant des images réelles et des images synthétiques générées par IA (text-to-image). DeepGuardDB a été conçu pour faciliter la recherche sur la détection et l'attribution de contenu généré par intelligence artificielle, notamment dans le contexte de la lutte contre les deepfakes et les images fabriquées.</p>
+          <div class="soft-tags">
+            <span class="soft-tag">Dataset</span>
+            <span class="soft-tag">Deepfake detection</span>
+            <span class="soft-tag">AI-Generated images</span>
+            <span class="soft-tag">IEEE Dataport</span>
+          </div>
+          <a href="https://dx.doi.org/10.21227/10ap-pk52" target="_blank" class="soft-link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+            DOI : 10.21227/10ap-pk52
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+<footer>Mohamed-Aymen Labiod · Université Paris Est Créteil · LISSI (EA 3956) · Inspired by the <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a></footer>
+</body>
+</html>
